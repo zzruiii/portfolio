@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Wave Animation</title>
+<style>
+  .wave {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(-45deg, #5f9ea0, #4682b4, #6495ed, #00ced1);
+    background-size: 400% 400%;
+    animation: waveAnimation 4s ease infinite;
+  }
+
+  @keyframes waveAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="wave"></div>
+
+</body>
+</html>
