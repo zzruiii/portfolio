@@ -1,0 +1,146 @@
+body {
+    font-family: 'Aldrich', sans-serif;
+    background-color: #000; 
+    color: white;
+    cursor: url('./image/mouse.png'), auto;
+  }
+  
+  #loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+  }
+  
+ 
+  #loading-bar2, #loading-bar1 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  
+  #loading-bar2, #loading-bar3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  
+
+  #loading-bar1 {
+    background-image: repeating-linear-gradient(
+      to right,
+      #AEFFE1, #AEFFE1 10px,
+      transparent 10px, transparent 20px 
+    );
+    background-size: 20px 5px; 
+    background-position: center;
+    background-repeat: repeat-x;
+    width: 0%; 
+    height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loading 3s ease-in-out forwards; 
+    z-index: 2; 
+  }
+
+  #loading-bar2 {
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.5), rgba(138, 43, 226, 0.5));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+  }
+
+  #loading-bar3 {
+    background: linear-gradient(to right, rgba(0, 0, 255, 1), rgba(138, 43, 226, 1));
+    width: 0%; 
+    height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loading 3s ease-in-out forwards; 
+  }
+  
+  #airplane {
+    position: absolute;
+    top: 50%;
+    left: 0; 
+    transform: translate(0, -50%);
+    height: 30px; 
+    width: 30px; 
+    z-index: 4; 
+    animation: plane 3s ease-in-out forwards;  
+    animation-delay: 0s;
+    
+  }
+
+  #loading-progress {
+    color: white;
+    margin-top: 50px; 
+    text-align: left;
+    position: relative;
+    z-index: 3; 
+    width: 100%;
+  }
+  
+  
+  #loading-intro {
+    color: #FFF;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  #loading-bar-container {
+    position: relative;
+    width: 60%; 
+    height: 40px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    margin: auto;
+  }
+  
+  @keyframes loading {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes plane {
+    from {
+      left: 0%
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+  
+  #loading-bar1 {
+   
+    animation: loading 3s ease-in-out forwards; 
+  }
+
+  #map {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+
+  }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="homestyle.css">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    </head> 
+    <body>
+        
+        <img src="./image/Component3.png" alt="logo" width="155" height="155" id="logo">
+        <a href="projectisland.html">
+            <img src="./image/Component1.png" alt="GoDown" width="66" height="47" id="cornerimage">
+        </a>
+        <img src="./image/Component2.png" alt="GoDown" width="748" height="721" id="backgroundimage">
+        <div class="container">
+            <nav>
+                <div class="nav-item selected"><a href="home.html">Home</a></div>
+                <div class="nav-item"><a href="projectisland.html">Project Island</a></div>
+                <div class="nav-item"><a href="contact.html">Contact</a></div>
+            </nav>
+        
+            <div class="centered-container">
+                <span>WELCOME TO</span>
+                <span>RUI'S WORLD</span>
+            </div>
+        </div>
+        <script src="home.js"></script>
+        <script>
+            window.addEventListener('scroll', function() {
+               
+                var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+                console.log('Current scroll position:', scrollPosition);
+            
+                if (scrollPosition > 50) { 
+                    window.location.href = 'projectisland.html';
+                }
+            });
+        </script>
+    </body>
+</html>

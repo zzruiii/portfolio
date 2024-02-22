@@ -1,0 +1,275 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+@keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+body{
+    animation: fadeInAnimation 1s ease-in-out;
+    background-color:black;
+    margin: 0; 
+    padding: 0; 
+    cursor: url('./image/mouse.png'), auto;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav div{
+    padding: 0px;
+    font-size: 20px;
+}
+
+.nav-item {
+    margin: 0; 
+}
+
+.nav-item a {
+    text-decoration: none; 
+    color: #BB96FE; 
+    display: block; 
+    padding: 10px 15px; 
+}
+
+.nav-item a:hover {
+    text-decoration: underline; 
+}
+
+.nav-item.selected a {
+    background-color: #BB96FE;
+    color: white;
+    border-radius: 0px;
+}
+
+.container{
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    color: #BB96FE;
+    font-family: Aldrich;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+#cornerimage {
+    display: inline-block; 
+    animation: jump 1.5s ease-in-out infinite;
+  }
+  
+
+#cornerimage{
+    position: absolute;
+    right:20px; 
+    bottom: 20px;
+    max-width: 90%; 
+    width: auto; 
+}
+
+#logo{
+    position: absolute;
+    left:20px; 
+    top: 20px; 
+    max-width: 90%; 
+    width: auto; 
+}
+
+.vector-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    font-family: Aldrich;
+}
+
+.vector-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #AEFFE1; 
+    font-size: 20px; 
+    text-align: left; 
+}
+
+#title-vector11 {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: #AEFFE1; 
+    font-size: 20px; 
+    text-align: left; 
+}
+
+#title-vector13 {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: #AEFFE1; 
+    font-size: 20px; 
+    text-align: left; 
+}
+
+#title-vector1 {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #AEFFE1;
+    font-size: 20px; 
+    text-align: left; 
+}
+
+#title-vector14 {
+    position: absolute;
+    top: 43%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    color: #AEFFE1; 
+    font-size: 20px; 
+    text-align: left; 
+}
+
+.vector-image {
+    stroke-width: 5px;
+    stroke: #AEFFE1;
+    width: 284px;
+    height: auto; 
+}
+
+
+#vector1-container {
+    position: absolute;
+    left: 492px;
+    top: 57px;
+}
+
+#vector11-container {
+    position: absolute;
+    left: 849px;
+    top: 56px;
+}
+
+#vector13-container {
+    position: absolute;
+    left: 1222px;
+    top: 270px;
+}
+
+#vector14-container {
+    position: absolute;
+    left: 972px;
+    top: 540px;
+}
+
+#vector15-container {
+    position: absolute;
+    left: 602px;
+    top: 519px;
+}
+
+
+#vector11-container {
+    position: relative; 
+    left: auto;
+    top: auto;
+    transform: none;
+}
+
+#vector11-container .vector-image,
+#vector11-container .vector-image-hover {
+    width: 284px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+#vector11-container .vector-image-hover {
+    display: none; 
+}
+
+#vector11-container:hover .vector-image {
+    display: none; 
+}
+
+#vector11-container:hover .vector-image-hover {
+    display: block; 
+}
+
+
+#vector11-container .circle-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 300px; 
+    height: 300px;
+    transition: transform 0.3s ease;
+    z-index: 0; 
+    display: none; 
+}
+
+#vector11-container:hover .circle-background {
+    display: block;
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+#vector11-container:hover .vector-title {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color:black;
+    font-size: 30px;
+    transition: font-size 0.3s ease;
+}
+
+#vector11-container .vector-title {
+    position: absolute;
+    z-index: 1; 
+}
+
+#vector11-container a {
+    display: block; 
+    position: relative;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+
+
+
+
+
+
+
+

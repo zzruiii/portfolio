@@ -1,0 +1,257 @@
+body {
+    background-color: black;
+    cursor: url('./image/mouse.png'), auto;
+}
+
+nav {
+    position: absolute;
+    top:50px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav div {
+    padding: 18px;
+    font-size: 30px;
+    color: #BB96FE; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.container h1 {
+    color: #AEFFE1;
+    font-family: Aldrich;
+    font-size: 90px;
+    font-style: normal;
+    line-height: normal;
+    margin: 0; 
+    padding: 0; 
+    position: absolute; 
+    top: 60px; 
+    left: 200px;
+}
+
+.bars-wrapper {
+    margin-top: 200px; 
+}
+
+.bar-label-container {
+    position: relative;
+    margin: 40px;
+}
+
+.bar-and-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: block;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.bar-label-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.bar-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: Aldrich;
+    transform: translate(-50%, -50%);
+    color: #BB96FE;
+    font-size: 30px;
+    margin: 0; 
+    white-space: nowrap;
+}
+
+#logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    max-width: 100%;
+}
+
+#back{
+    position: absolute;
+    right:50px; 
+    bottom: 50px; 
+    max-width: 100%;
+}
+#frame{
+    position: absolute;
+    top:64px;
+    right: 19px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bar-and-label .bar-image {
+    transition: opacity 0.3s ease;
+}
+
+.bar-and-label:hover .bar-image {
+    opacity: 0; 
+}
+
+.bar-and-label:hover .bar-label {
+    font-size: 60px;
+    transition: font-size 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative; 
+}
+
+
+nav ul li {
+    position: relative;
+}
+
+
+nav > ul > li > a {
+    padding: 18px;
+    font-size: 30px;
+    font-family: Aldrich;
+    color: #BB96FE;
+    text-decoration: none;
+    display: block; 
+    cursor: pointer; 
+}
+
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    width: 130px;
+}
+
+
+nav ul li ul li a {
+    font-size: 25px;
+    font-family: Aldrich;
+    color: #BB96FE;
+    padding: 15px;
+    display: block; 
+    text-decoration: none;
+    text-align: right;
+}
+
+nav ul li ul li a:hover {
+    color: white; 
+    background-color: #BB96FE;
+}
+
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+
+nav > ul > li > a:hover {
+    padding: 18px;
+    font-size: 30px;
+    font-family: Aldrich;
+    color: white;
+    background-color:#BB96FE;
+
+}
+
+
+#back {
+    transition: transform 0.3s ease; 
+}
+
+#back:hover {
+    transform: scale(1.2); 
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust the logo size and placement */
+    #logo {
+        width: 60px;
+        height: 60px;
+        top: 10px;
+        left: 10px;
+    }
+
+    /* Adjust the back button size and placement */
+    #back {
+        width: 60px;
+        height: 60px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    /* Adjust main navigation styling */
+    nav {
+        top: 80px;
+        right: 10px;
+    }
+
+    nav > ul > li > a {
+        font-size: 20px;
+    }
+
+    nav ul li ul {
+        width: 100px;
+    }
+
+    nav ul li ul li a {
+        font-size: 15px;
+    }
+
+    /* Adjust the main title inside .container */
+    .container h1 {
+        font-size: 60px; /* Adjusted font size for mobile */
+        top: 10px;
+        left: 50%; /* Center the title */
+        position: relative;
+        margin-top: 20px;
+    }
+
+    /* Adjust the project bar sizes and labels */
+    .bar-label-container {
+        margin: 20px;
+    }
+
+    .bar-and-label .bar-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .bar-and-label:hover .bar-label {
+        font-size: 30px;
+        transition: font-size 0.3s ease;
+    }
+
+    .bar-label {
+        font-size: 18px;
+    }
+
+    /* Adjust the container for the project bars */
+    .container {
+        padding: 0 10px;
+    }
+
+    /* Make sure the bars wrapper is not too wide */
+    .bars-wrapper {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
