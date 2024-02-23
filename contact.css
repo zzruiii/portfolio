@@ -143,77 +143,74 @@ u {
 
 .icons {
     position: absolute;
-    right: 50px; /* Adjust as needed */
-    bottom: 50px; /* Adjust as needed */
+    right: 50px; 
+    bottom: 50px; 
     display: flex;
-    align-items: center; /* Align images vertically */
+    align-items: center; 
 }
 
 .icons img {
-    margin-left: 50px; /* Space between images */
+    margin-left: 50px; 
 }
 
 @media screen and (max-width: 480px) {
-    /* Adjust the main navigation styling */
     nav {
         top: 10px;
         right: 10px;
-        flex-direction: column; /* Stack the nav items vertically */
-        align-items: flex-end; /* Align to the end (right side in LTR languages) */
+        flex-direction: column; 
+        align-items: flex-end; 
     }
 
     nav .nav-item {
-        font-size: 16px; /* Adjust font size for mobile */
+        font-size: 16px; 
     }
 
-    /* Adjust the title size and placement */
     h1 {
-        font-size: 30px; /* Smaller font size for mobile */
-        top: 60px; /* Adjust the top position */
-        left: 50%; /* Center the title */
-        transform: translateX(-50%); /* Center align */
+        font-size: 30px; 
+        top: 60px; 
+        left: 50%; 
+        transform: translateX(-50%); 
     }
 
-    /* Adjust the underline (resume) size and placement */
+    
     u {
-        font-size: 20px; /* Smaller font size for mobile */
-        right: 10px; /* Adjust the right position */
-        bottom: auto; /* Adjust if necessary */
-        top: 100px; /* Position below the title */
+        font-size: 20px; 
+        right: 10px; 
+        bottom: auto; 
+        top: 100px; 
     }
 
-    /* Adjust the introduction text styling and layout */
+
     .introduction {
-        font-size: 20px; /* Smaller font size for mobile */
-        flex-direction: column; /* Stack the text vertically */
-        top: auto; /* Adjust if necessary */
-        bottom: 120px; /* Position at a fixed distance from the bottom */
-        left: 10px; /* Align to the left with padding */
-        right: 10px; /* Align to the right with padding */
-        text-align: center; /* Center the text */
+        font-size: 20px; 
+        flex-direction: column; 
+        top: auto; 
+        bottom: 120px; 
+        left: 10px;
+        right: 10px; 
+        text-align: center; 
     }
 
-    /* Hide the photo and icon images */
+
     #photo, #icon {
         display: none;
     }
 
-    /* Adjust the social media icons */
     .icons {
-        right: 10px; /* Align to the right with padding */
-        bottom: 20px; /* Position at a fixed distance from the bottom */
-        justify-content: center; /* Center the icons horizontally */
+        right: 10px;
+        bottom: 20px; 
+        justify-content: center;
     }
 
     .icons img {
-        margin-left: 10px; /* Reduce space between images */
+        margin-left: 10px; 
     }
 
-    /* Adjust the logo size and placement */
+    
     #logo {
         left: 10px;
         top: 10px;
-        width: 50px; /* Set a fixed width for the logo */
-        height: auto; /* Maintain aspect ratio */
+        width: 50px; 
+        height: auto;
     }
 }
