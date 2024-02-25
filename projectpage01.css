@@ -5,14 +5,14 @@ body {
 
 nav {
     position: absolute;
-    top:50px;
+    top:30px;
     right: 20px;
     display: flex;
     flex-direction: row;
 }
 
 nav div {
-    padding: 18px;
+    padding: 15px;
     font-size: 30px;
     color: #BB96FE; 
 }
@@ -182,7 +182,7 @@ nav > ul > li > a:hover {
 }
 
 @media screen and (max-width: 480px) {
-    /* Adjust the logo size and placement */
+
     #logo {
         width: 60px;
         height: 60px;
@@ -190,7 +190,7 @@ nav > ul > li > a:hover {
         left: 10px;
     }
 
-    /* Adjust the back button size and placement */
+    
     #back {
         width: 60px;
         height: 60px;
@@ -198,7 +198,7 @@ nav > ul > li > a:hover {
         bottom: 10px;
     }
 
-    /* Adjust main navigation styling */
+  
     nav {
         top: 80px;
         right: 10px;
@@ -216,16 +216,16 @@ nav > ul > li > a:hover {
         font-size: 15px;
     }
 
-    /* Adjust the main title inside .container */
+   
     .container h1 {
-        font-size: 60px; /* Adjusted font size for mobile */
+        font-size: 60px; 
         top: 10px;
-        left: 50%; /* Center the title */
+        left: 50%; 
         position: relative;
         margin-top: 20px;
     }
 
-    /* Adjust the project bar sizes and labels */
+ 
     .bar-label-container {
         margin: 20px;
     }
@@ -244,12 +244,12 @@ nav > ul > li > a:hover {
         font-size: 18px;
     }
 
-    /* Adjust the container for the project bars */
+   
     .container {
         padding: 0 10px;
     }
 
-    /* Make sure the bars wrapper is not too wide */
+  
     .bars-wrapper {
         width: 100%;
         box-sizing: border-box;
