@@ -20,6 +20,7 @@ body {
     cursor: url('./image/mouse.png'), auto;
 }
 
+
 nav {
     position: absolute;
     top:0px;
@@ -70,19 +71,7 @@ nav div {
     font-family: Aldrich;
 }
 
-h1 {
-    color: #AEFFE1;
-    font-family: Aldrich;
-    font-size: 90px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0; 
-    padding: 0; 
-    position: absolute; 
-    top: 20px; 
-    left: 200px;
-}
+
 
 u {
     color: #AEFFE1;
@@ -97,6 +86,17 @@ u {
     right: 130px;
     bottom: 215px;
 }
+
+#resume-link {
+    color: #AEFFE1; 
+    text-decoration: none; 
+}
+
+#resume-link:hover {
+    color: #AEFFE1; 
+    text-decoration: underline; 
+}
+
 
 #logo {
     position: absolute;
@@ -154,6 +154,7 @@ u {
 }
 
 @media screen and (max-width: 480px) {
+    
     nav {
         top: 10px;
         right: 10px;
@@ -165,52 +166,54 @@ u {
         font-size: 16px; 
     }
 
+
     h1 {
-        font-size: 30px; 
-        top: 60px; 
-        left: 50%; 
+        font-size: 30px;
+        top: 60px;
+        left: 50%;
         transform: translateX(-50%); 
     }
 
-    
+   
     u {
         font-size: 20px; 
-        right: 10px; 
+        right: 10px;
         bottom: auto; 
         top: 100px; 
     }
 
-
+    
     .introduction {
         font-size: 20px; 
-        flex-direction: column; 
+        flex-direction: column;
         top: auto; 
         bottom: 120px; 
-        left: 10px;
+        left: 10px; 
         right: 10px; 
         text-align: center; 
     }
 
-
+   
     #photo, #icon {
         display: none;
     }
 
+  
     .icons {
         right: 10px;
         bottom: 20px; 
-        justify-content: center;
+        justify-content: center; 
     }
 
     .icons img {
         margin-left: 10px; 
     }
 
-    
+
     #logo {
         left: 10px;
         top: 10px;
         width: 50px; 
-        height: auto;
+        height: auto; 
     }
 }
